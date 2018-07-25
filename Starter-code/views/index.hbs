@@ -1,2 +1,60 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<html>
+  <head>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <section>
+      <% pictures.forEach(function(picture) { %>
+        <h3><%= picture.name %></h3>
+        <img src="<%= picture.pic_path %>" alt="<%= picture.pic_name %>" />
+      <% })%>
+    </section>
+    <div class="container-fluid">
+      <div class="home-heading text-center row first-section">
+        <div class="home-heading-wrapper">
+          <h1 class="home-header-layout" Insurance made easy through proper claim management.</h1>
+          <p>Claim advantage creators focus on making Insurance claims more convenient and assesible for the user on their own terms. We
+            facilitate the needs for public adjusters, law firms, and insurance companies that are having trouble
+            staying on top of their case.</p>
+          <a class="btn btn-default" href="#">Read their stories</a>
+        </div>
+      </div>
+    </div>
+
+   <div class="container-fluid">
+  <div class="home-heading text-center row">
+    <div class="home-heading-wrapper">
+      <h1>Every month claim advantage customers save...</h1>
+      <p> <h2> 12 </h2> Hours in lost paperwork. </p>
+      <p> <h2> 20 </h2> Hours searcing for information. </p>
+      <p> <h2> 45 </h2> Hours in manual filing. </p>
+      <p> for Only <h2>$9.99 a month!!</h2> </h1> </p>
+    </div>
+  </div>
+</div>
+
+
+<p></p>
+<div class="container-fluid">
+<div class="home-heading text-center row">
+<div class="home-heading-wrapper">
+  <img class="home-heading-logo" src="images/Photo on 10-23-17 at 9.17 PM.jpg" alt="Claims-advantage">
+  <h1>Founder</h1>
+</div>
+</div>
+</div>
+
+<!-- <section>
+  <h2>Upload your photo</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="text" name="name">
+    <input type="file" name="photo">
+    <input type="submit" value="Save">
+  </form>
+</section> -->
+
+
+  </body>
+</html>

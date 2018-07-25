@@ -6,7 +6,49 @@
   </head>
   <body>
     <p>Claims-Depot</p>
+<nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#home-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
+          <div class="collapse navbar-collapse" id="home-nav">
+            <ul class="nav navbar-nav">
+              <a href="#" class="nav-logo-link">
+                <img class="nav-logo-image" src="/Users/johnatan/Desktop/Claims-Depot-Project/Starter-code/public/images/Insurance-policy-image.jpg" alt="Claims-Depot">
+              </a>
+              <!-- <li><a href="#">File a Claim</a></li> -->
+              <li class="nav-logo">
+
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-search"></span>
+                </a>
+              </li>
+              {{!-- <% if (typeof user !== 'undefined') { %> --}}
+              <li><a href="/file-new-claim">File a Claim</a></li>
+              {{!-- <% } %> --}}
+              <li><a href="/login">Login</a></li>
+              <li><a href="/signup">Signup</a></li>
+              <li> <form action="/logout" method="POST">
+                <button class="btn btn-link btn-logout" type="submit">Logout</a>
+                </form>
+              </li> <li><a href="/profile">Profile</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+    <div class="main-container">
+      
 
     <script src='/javascripts/script.js'></script>
   </body>
